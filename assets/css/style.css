@@ -19,6 +19,7 @@ body {
     align-items: center;
     text-align: center;
     height: 200px;
+    justify-content: space-around;
 }
 
 #player0 img {
@@ -27,4 +28,17 @@ body {
 
 #player1 img {
     width: 50%;
+}
+
+#score {
+    text-align: center;
+    margin: 3em 0;
+}
+
+#computer-score {
+    margin-left: 2em;
+}
+
+#player-score {
+    margin-right: 2em;
 }
