@@ -11,5 +11,20 @@ body {
     background-color: #E3E7EC;
     color: #071220;
     font-family: 'Rubik doodle shadow', sans-serif;
+}
 
+/* Main style */
+#game {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    height: 200px;
+}
+
+#player0 img {
+    width: 50%;
+}
+
+#player1 img {
+    width: 50%;
 }
