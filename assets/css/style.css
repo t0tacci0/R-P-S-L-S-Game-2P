@@ -5,3 +5,11 @@
 * {
     margin: 0;
 }
+
+/* General style */
+body {
+    background-color: #E3E7EC;
+    color: #071220;
+    font-family: 'Rubik doodle shadow', sans-serif;
+
+}
