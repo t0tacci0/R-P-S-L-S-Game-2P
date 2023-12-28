@@ -18,17 +18,30 @@ body {
     display: flex;
     justify-content: space-evenly;
     background-color: #16212F;
-    padding: 3rem;
+    padding: 1.8rem;
     color: white;
 }
 
 .button {
-    font-size: larger;
+    font-size: x-large;
+    background: none;
+    border: 2px solid white;
+    border-radius: 2rem;
+    padding: 15px;
+}
+
+#how-to-play {
+    color: white;
+    border: 2px solid white;
+    border-radius: 2rem;
+    padding: 1rem;
 }
 
 #title-animation {
     display: inline-block;
     animation: movement 7s linear infinite;
+    font-weight: bolder;
+    font-size: 1.5rem;
 }
 
 #title-animation:nth-child(1) {
