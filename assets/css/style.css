@@ -68,11 +68,13 @@ body {
 }
 
 #player0 img {
-    width: 70%;
+    margin-top: 15rem;
+    margin-left: 5rem;
 }
 
 #player1 img {
-    width: 70%;
+    margin-top: 15rem;
+    margin-right: 5rem;
 }
 
 #score {
