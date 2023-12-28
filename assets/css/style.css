@@ -59,4 +59,10 @@ body {
     padding: 2rem 3rem;
     border: 2px solid black;
     outline: none;
+    transition: 0.3s all linear;
+}
+
+#buttons-container button:hover {
+    background-color: rgb(66, 92, 240);
+    border: 1px solid rgb(66, 92, 240);
 }
