@@ -8,7 +8,7 @@
 
 /* General style */
 body {
-    background-color: #E3E7EC;
+    background-color: #C8E1FA;
     color: #071220;
     font-family: 'Rubik doodle shadow', sans-serif;
 }
@@ -65,4 +65,18 @@ body {
 #buttons-container button:hover {
     background-color: rgb(66, 92, 240);
     border: 1px solid rgb(66, 92, 240);
+}
+
+/* Footer */
+#footer {
+    display: flex;
+    justify-content: space-around;
+    background-color: #16212F;
+    color: white;
+    margin-top: 11rem;
+    padding: 2rem;
+}
+
+#credits {
+    font-size: xx-large;
 }
