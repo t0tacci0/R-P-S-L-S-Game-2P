@@ -48,3 +48,15 @@ body {
     justify-content: space-around;
     margin-top: 3rem;
 }
+
+#buttons-container button {
+    background: none;
+    font-family: 'Rubik doodle shadow', sans-serif;
+    color: black;
+    border-radius: 10rem;
+    width: 150px;
+    cursor: pointer;
+    padding: 2rem 3rem;
+    border: 2px solid black;
+    outline: none;
+}
