@@ -32,7 +32,7 @@ body {
 
 #score {
     text-align: center;
-    margin: 3em 0;
+    margin-top: 10rem;
 }
 
 #computer-score {
@@ -41,4 +41,10 @@ body {
 
 #player-score {
     margin-right: 2em;
+}
+
+#buttons-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 3rem;
 }
