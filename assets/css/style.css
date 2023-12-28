@@ -13,6 +13,30 @@ body {
     font-family: 'Rubik doodle shadow', sans-serif;
 }
 
+/* Header */
+#header {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #16212F;
+    padding: 3rem;
+    color: white;
+}
+
+.button {
+    font-size: larger;
+}
+
+#title-animation {
+    display: inline-block;
+    animation: movement 7s linear infinite;
+}
+
+@keyframes movement {
+    50% {
+        transform: translateY(30px);
+    }
+}
+
 /* Main style */
 #game {
     display: flex;
@@ -23,16 +47,18 @@ body {
 }
 
 #player0 img {
-    width: 50%;
+    width: 70%;
 }
 
 #player1 img {
-    width: 50%;
+    width: 70%;
 }
 
 #score {
     text-align: center;
     margin-top: 10rem;
+    font-size: large;
+    font-weight: bold;
 }
 
 #computer-score {
