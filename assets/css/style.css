@@ -54,17 +54,19 @@ body {
     font-family: 'Rubik doodle shadow', sans-serif;
     color: black;
     border-radius: 10rem;
-    width: 150px;
+    width: 160px;
     cursor: pointer;
-    padding: 2rem 3rem;
+    padding: 2rem 2rem;
     border: 2px solid black;
     outline: none;
     transition: 0.3s all linear;
+    font-size: large;
+    font-weight: bold;
 }
 
 #buttons-container button:hover {
-    background-color: rgb(66, 92, 240);
-    border: 1px solid rgb(66, 92, 240);
+    background-color: white;
+    border: 1px solid black;
 }
 
 /* Footer */
