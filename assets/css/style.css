@@ -31,6 +31,14 @@ body {
     animation: movement 7s linear infinite;
 }
 
+#title-animation:nth-child(1) {
+    animation-delay: 1s;
+}
+
+#title-animation:nth-child(2) {
+    animation-delay: 0.5s;
+}
+
 @keyframes movement {
     50% {
         transform: translateY(30px);
