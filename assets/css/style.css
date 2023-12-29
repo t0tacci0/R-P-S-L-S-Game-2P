@@ -176,6 +176,38 @@ body {
     border: 1px solid black;
 }
 
+.playGame:hover {
+    background-color: white;
+    border: 1px solid black;
+}
+
+.rock,
+.paper,
+.scissors {
+    visibility: hidden;
+}
+
+.start {
+    display: flex;
+    justify-content: space-around;
+    margin-top: -7rem;
+}
+
+.playGame {
+    background: none;
+    font-family: 'Rubik doodle shadow', sans-serif;
+    color: black;
+    border-radius: 10rem;
+    width: 160px;
+    cursor: pointer;
+    padding: 2rem 2rem;
+    border: 2px solid black;
+    outline: none;
+    transition: 0.3s all linear;
+    font-size: large;
+    font-weight: bold;
+}
+
 /* Footer */
 #footer {
     display: flex;
