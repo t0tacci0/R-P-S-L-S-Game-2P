@@ -67,38 +67,90 @@ body {
     justify-content: space-around;
 }
 
-#player0 img {
+.player0 img {
     margin-top: 15rem;
     margin-left: 5rem;
 }
 
-#player1 img {
+.player1 img {
     margin-top: 15rem;
     margin-right: 5rem;
 }
 
-#score {
+.shakeComputer {
+    animation: shakeComputer 0.8s linear;
+}
+
+.shakePlayer {
+    animation: shakePlayer 0.8s linear;
+}
+
+@keyframes shakeComputer {
+    0% {
+        transform: rotate(-30deg);
+    }
+
+    25% {
+        transform: rotate(30deg);
+    }
+
+    50% {
+        transform: rotate(-30deg);
+    }
+
+    75% {
+        transform: rotate(30deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes shakePlayer {
+    0% {
+        transform: rotate(30deg);
+    }
+
+    25% {
+        transform: rotate(-30deg);
+    }
+
+    50% {
+        transform: rotate(30deg);
+    }
+
+    75% {
+        transform: rotate(-30deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+.score {
     text-align: center;
     margin-top: 10rem;
     font-size: x-large;
     font-weight: bold;
 }
 
-#computer-score {
+.computer-score {
     margin-left: 2em;
 }
 
-#player-score {
+.player-score {
     margin-right: 2em;
 }
 
-#buttons-container {
+.buttons-container {
     display: flex;
     justify-content: space-around;
     margin-top: 3rem;
 }
 
-#buttons-container button {
+.buttons-container button {
     background: none;
     font-family: 'Rubik doodle shadow', sans-serif;
     color: black;
@@ -113,7 +165,7 @@ body {
     font-weight: bold;
 }
 
-#buttons-container button:hover {
+.buttons-container button:hover {
     background-color: white;
     border: 1px solid black;
 }
