@@ -67,14 +67,20 @@ body {
     justify-content: space-around;
 }
 
+.hands {
+    display: contents;
+}
+
 .computer {
     margin-top: 15rem;
     margin-left: 5rem;
 }
 
+
 .player {
     margin-top: 15rem;
     margin-right: 5rem;
+    transform: rotateY(180deg);
 }
 
 .shakeComputer {
