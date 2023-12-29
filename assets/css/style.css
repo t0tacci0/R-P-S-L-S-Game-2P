@@ -59,7 +59,7 @@ body {
 }
 
 /* Main style */
-#game {
+.game {
     display: flex;
     align-items: center;
     text-align: center;
@@ -134,7 +134,7 @@ body {
         transform: rotate(0deg);
     }
 }
-
+/* Score section */
 .score {
     text-align: center;
     margin-top: 10rem;
@@ -185,6 +185,7 @@ body {
 .paper,
 .scissors {
     visibility: hidden;
+    transition: 2s ease-in 2s;
 }
 
 .start {
