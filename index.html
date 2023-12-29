@@ -26,32 +26,30 @@
                 <i class="fa-solid fa-house fa-2xl" style="color: #ffffff;"></i>
             </a>
         </button>
-        <button id="play" class="button" type="button" onclick="audio.play();">
-            <i class="fa-solid fa-music fa-2xl" style="color: #ffffff;"></i>
+        <button id="play" class="button" type="button">
+            <i class="fa-solid fa-music fa-2xl" style="color: #ffffff;" onclick="audio.play();"></i>
         </button>
-        <button id="pause" class="button" type="button" onclick="audio.pause();">
-            <i class="fa-solid fa-pause fa-2xl" style="color: #ffffff;"></i>
+        <button id="pause" class="button" type="button">
+            <i class="fa-solid fa-pause fa-2xl" style="color: #ffffff;" onclick="audio.pause();"></i>
         </button>
         <button id="how-to-play" class="button" type="button">How To Play</button>
     </div>
     <!--Main section-->
     <div id="game-container">
         <div id="game">
-            <div class="player0">
-                <img src="assets/images/rock.png" alt="Rock-image">
-            </div>
-            <div class="player1">
-                <img src="assets/images/rock.png" alt="Rock-image">
+            <div class="hands">
+                <img class="computer" src="assets/images/rock.png" alt="Rock-image">
+                <img class="player" src="assets/images/rock.png" alt="Rock-image">
             </div>
         </div>
         <div class="score">
-            COMPUTER <span class="computer-score">0</span> - 
-            <span class="player-score">0</span> PLAYER
+            COMPUTER <span class="computerScore">0</span> - 
+            <span class="playerScore">0</span> PLAYER
         </div>
-        <div class="buttons-container">
-            <button class="gamebtn" type="button">ROCK</button>
-            <button class="gamebtn" type="button">PAPER</button>
-            <button class="gamebtn" type="button">SCISSORS</button>
+        <div class="options">
+            <button class="rock" type="button">rock</button>
+            <button class="paper" type="button">paper</button>
+            <button class="scissors" type="button">scissors</button>
         </div>
     </div>
     <!--Footer section-->

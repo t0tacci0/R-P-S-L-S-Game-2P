@@ -67,12 +67,12 @@ body {
     justify-content: space-around;
 }
 
-.player0 img {
+.computer {
     margin-top: 15rem;
     margin-left: 5rem;
 }
 
-.player1 img {
+.player {
     margin-top: 15rem;
     margin-right: 5rem;
 }
@@ -136,21 +136,21 @@ body {
     font-weight: bold;
 }
 
-.computer-score {
+.computerScore {
     margin-left: 2em;
 }
 
-.player-score {
+.playerScore {
     margin-right: 2em;
 }
 
-.buttons-container {
+.options {
     display: flex;
     justify-content: space-around;
     margin-top: 3rem;
 }
 
-.buttons-container button {
+.options button {
     background: none;
     font-family: 'Rubik doodle shadow', sans-serif;
     color: black;
@@ -165,7 +165,7 @@ body {
     font-weight: bold;
 }
 
-.buttons-container button:hover {
+.options button:hover {
     background-color: white;
     border: 1px solid black;
 }
