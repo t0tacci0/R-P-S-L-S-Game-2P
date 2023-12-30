@@ -24,13 +24,25 @@ const mainGame = () => {
         const computer = document.querySelector(".computer");
         const player = document.querySelector(".player");
         const hands = document.querySelectorAll(".hands img");
+
+        //Computer Options
+        const computerOptions = ["rock", "paper", "scissors"];
+
+        options.forEach(option => {
+            option.addEventListener("click", function () {
+                //Computer Choice
+                const computerNumber = Math.floor(Math.random() * 3);
+                const computerChoice = computerOptions[computerNumber];
+
+            });
+        });           
     };
 
 
-    //Is call all the inner function
+    //Calling functions
     startGame();
     playGame();
 };
 
-//start the game function
+//Start the main function
 mainGame();
