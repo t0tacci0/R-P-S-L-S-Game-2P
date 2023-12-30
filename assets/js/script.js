@@ -1,4 +1,4 @@
-const game = () => {
+const mainGame = () => {
     let playerScore = 0;
     let computerScore = 0;
 
@@ -22,5 +22,5 @@ const game = () => {
     startGame();
 };
 
-    //start the game function
-    game();
+//start the game function
+mainGame();
