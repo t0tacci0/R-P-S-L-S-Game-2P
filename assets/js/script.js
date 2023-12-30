@@ -18,8 +18,18 @@ const mainGame = () => {
         });
     };
 
+    //Play the Game
+    const playGame = () => {
+        const options = document.querySelectorAll(".options button");
+        const computer = document.querySelector(".computer");
+        const player = document.querySelector(".player");
+        const hands = document.querySelectorAll(".hands img");
+    };
+
+
     //Is call all the inner function
     startGame();
+    playGame();
 };
 
 //start the game function
