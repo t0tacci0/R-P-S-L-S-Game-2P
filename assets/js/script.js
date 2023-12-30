@@ -34,6 +34,10 @@ const mainGame = () => {
                 const computerNumber = Math.floor(Math.random() * 3);
                 const computerChoice = computerOptions[computerNumber];
 
+                //Animation
+                player.style.animation = "shakePlayer 2s ease";
+                computer.style.animation = "shakeComputer 2s ease";
+
             });
         });           
     };
