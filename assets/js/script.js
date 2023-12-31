@@ -60,6 +60,16 @@ const mainGame = () => {
                 return;
             }
         }
+        //Paper Option
+        if (playerChoice === "paper") {
+            if (computerChoice === "scissors") {
+                game.textContent = "YOU LOSE!";
+                return;
+            } else {
+                game.textContent = "YOU WIN!";
+                return;
+            }
+        }
 
     }
 
