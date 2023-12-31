@@ -33,51 +33,53 @@ const mainGame = () => {
                 //Computer Choice
                 const computerNumber = Math.floor(Math.random() * 3);
                 const computerChoice = computerOptions[computerNumber];
+                //Game Text Result
+                compareHands(this.textContent, computerChoice);
                 //Update Images
-                player.src = `./assets/${this.textContent}.png`;
-                computer.src = `./assets/${computerChoice}.png`;
+                player.src = `assets/images/${this.textContent}.png`;
+                computer.src = `assets/images/${computerChoice}.png`;
                 //Animation
                 player.style.animation = "shakePlayer 2s ease";
                 computer.style.animation = "shakeComputer 2s ease";
             });
-        });           
+        });
     };
 
     const compareHands = (playerChoice, computerChoice) => {
         //Update Text
-        const game = document.querySelector(".game");
+        const result = document.querySelector(".result");
         //Tie Option
         if (playerChoice === computerChoice) {
-            game.textContent = "TIE!";
+            result.textContent = "TIE!";
             return;
         }
         //Rock Option
         if (playerChoice === "rock") {
             if (computerChoice === "scissors") {
-                game.textContent = "YOU WIN!";
+                result.textContent = "YOU WIN!";
                 return;
             } else {
-                game.textContent = "YOU LOSE!";
+                result.textContent = "YOU LOSE!";
                 return;
             }
         }
         //Paper Option
         if (playerChoice === "paper") {
             if (computerChoice === "scissors") {
-                game.textContent = "YOU LOSE!";
+                result.textContent = "YOU LOSE!";
                 return;
             } else {
-                game.textContent = "YOU WIN!";
+                result.textContent = "YOU WIN!";
                 return;
             }
         }
         //Scissors Option
         if (playerChoice === "scissors") {
             if (computerChoice === "rock") {
-                game.textContent = "YOU LOSE!";
+                result.textContent = "YOU LOSE!";
                 return;
             } else {
-                game.textContent = " YOU WIN!";
+                result.textContent = " YOU WIN!";
                 return;
             }
         }
