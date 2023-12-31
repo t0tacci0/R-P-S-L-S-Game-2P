@@ -45,11 +45,17 @@ const mainGame = () => {
     const compareHands = (playerChoice, computerChoice) => {
         //Update Text
         const game = document.querySelector(".game");
-        //Tie option
+        //Tie Option
         if (playerChoice === computerChoice) {
             game.textContent = "TIE!";
             return;
-        }
+        }//Rock Option
+        if (playerChoice === "rock") {
+            if (computerChoice === "scissors") {
+                game.textContent = "YOU WIN!";
+                return;
+            } else {
+
     }
 
 
