@@ -1,6 +1,6 @@
 const mainGame = () => {
-    let playerScore = 0;
-    let computerScore = 0;
+    let plScore = 0;
+    let cpScore = 0;
 
     //Start the Game
     const startGame = () => {
@@ -25,6 +25,12 @@ const mainGame = () => {
         const player = document.querySelector(".player");
         const hands = document.querySelectorAll(".hands img");
 
+        hands.forEach(hand => {
+            hand.addEventListener("animationend", function () {
+                this.style.animation = "";
+            });
+        });
+
         //Computer Options
         const computerOptions = ["rock", "paper", "scissors"];
 
@@ -35,7 +41,7 @@ const mainGame = () => {
                 const computerChoice = computerOptions[computerNumber];
                 //Game Text Result
                 compareHands(this.textContent, computerChoice);
-                //Update Images
+                //Image Result
                 player.src = `assets/images/${this.textContent}.png`;
                 computer.src = `assets/images/${computerChoice}.png`;
                 //Animation
@@ -45,21 +51,34 @@ const mainGame = () => {
         });
     };
 
+    const upScore = () => {
+        const playerScore = document.querySelector(".playerScore p");
+        const computerScore = document.querySelector(".computerScore p");
+        playerScore.textContent = plScore;
+        computerScore.textContent = cpScore;
+    };
+
+
     const compareHands = (playerChoice, computerChoice) => {
         //Update Text
         const result = document.querySelector(".result");
         //Tie Option
         if (playerChoice === computerChoice) {
             result.textContent = "TIE!";
+            upScore();
             return;
         }
         //Rock Option
         if (playerChoice === "rock") {
             if (computerChoice === "scissors") {
                 result.textContent = "YOU WIN!";
+                plScore++;
+                upScore();
                 return;
             } else {
                 result.textContent = "YOU LOSE!";
+                cpScore++;
+                upScore();
                 return;
             }
         }
@@ -67,9 +86,13 @@ const mainGame = () => {
         if (playerChoice === "paper") {
             if (computerChoice === "scissors") {
                 result.textContent = "YOU LOSE!";
+                cpScore++;
+                upScore();
                 return;
             } else {
                 result.textContent = "YOU WIN!";
+                plScore++;
+                upScore();
                 return;
             }
         }
@@ -77,9 +100,13 @@ const mainGame = () => {
         if (playerChoice === "scissors") {
             if (computerChoice === "rock") {
                 result.textContent = "YOU LOSE!";
+                cpScore++;
+                upScore();
                 return;
             } else {
                 result.textContent = " YOU WIN!";
+                plScore++;
+                upScore();
                 return;
             }
         }
