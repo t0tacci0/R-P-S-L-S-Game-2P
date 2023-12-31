@@ -55,6 +55,8 @@ const mainGame = () => {
                 game.textContent = "YOU WIN!";
                 return;
             } else {
+                game.textContent = "YOU LOSE!";
+                return;
 
     }
 
