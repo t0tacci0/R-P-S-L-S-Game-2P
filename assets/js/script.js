@@ -70,8 +70,18 @@ const mainGame = () => {
                 return;
             }
         }
+        //Scissors Option
+        if (playerChoice === "scissors") {
+            if (computerChoice === "rock") {
+                game.textContent = "YOU LOSE!";
+                return;
+            } else {
+                game.textContent = " YOU WIN!";
+                return;
+            }
+        }
 
-    }
+    };
 
 
     //Calling functions
