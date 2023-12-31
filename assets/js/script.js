@@ -33,11 +33,12 @@ const mainGame = () => {
                 //Computer Choice
                 const computerNumber = Math.floor(Math.random() * 3);
                 const computerChoice = computerOptions[computerNumber];
-
+                //Update Images
+                player.src = `./assets/${this.textContent}.png`;
+                computer.src = `./assets/${computerChoice}.png`;
                 //Animation
                 player.style.animation = "shakePlayer 2s ease";
                 computer.style.animation = "shakeComputer 2s ease";
-
             });
         });           
     };
@@ -81,7 +82,7 @@ const mainGame = () => {
             }
         }
 
-    };
+    }
 
 
     //Calling functions
