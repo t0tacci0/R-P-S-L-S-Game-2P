@@ -1,9 +1,13 @@
+const audio = new Audio();
+audio.src = "assets/music/music_game.wav";
+
+
 const mainGame = () => {
     let plScore = 0;
     let cpScore = 0;
 
     //Start the Game
-    const startGame = () => {
+    function startGame() {
         const startBtn = document.querySelector(".start button");
         const startScreen = document.querySelector(".start");
         const rock = document.querySelector(".rock");
@@ -16,7 +20,7 @@ const mainGame = () => {
             paper.style.visibility = "visible";
             scissors.style.visibility = "visible";
         });
-    };
+    }
 
     //Play the Game
     const playGame = () => {
@@ -114,7 +118,7 @@ const mainGame = () => {
             }
         }
 
-    }
+    };
 
 
     //Calling functions
