@@ -42,6 +42,16 @@ const mainGame = () => {
         });           
     };
 
+    const compareHands = (playerChoice, computerChoice) => {
+        //Update Text
+        const game = document.querySelector(".game");
+        //Tie option
+        if (playerChoice === computerChoice) {
+            game.textContent = "TIE!";
+            return;
+        }
+    }
+
 
     //Calling functions
     startGame();
