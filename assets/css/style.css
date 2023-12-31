@@ -164,7 +164,6 @@ p {
 .options {
     display: flex;
     justify-content: space-around;
-    margin-top: 3rem;
 }
 
 .options button {
@@ -180,6 +179,8 @@ p {
     transition: 0.3s all linear;
     font-size: large;
     font-weight: bold;
+    font-size: 22px;
+
 }
 
 .options button:hover {
@@ -203,7 +204,6 @@ p {
 .start {
     display: flex;
     justify-content: space-around;
-    margin-top: -6rem;
 }
 
 .playGame {
@@ -217,7 +217,7 @@ p {
     border: 2px solid black;
     outline: none;
     transition: 0.3s all linear;
-    font-size: large;
+    font-size: x-large;
     font-weight: bold;
 }
 
