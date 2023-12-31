@@ -71,6 +71,11 @@ body {
     display: contents;
 }
 
+.result {
+    font-size: 30px;
+    padding-top: 12rem;
+}
+
 .computer {
     margin-top: 15rem;
     margin-left: 5rem;
