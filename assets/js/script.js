@@ -49,7 +49,8 @@ const mainGame = () => {
         if (playerChoice === computerChoice) {
             game.textContent = "TIE!";
             return;
-        }//Rock Option
+        }
+        //Rock Option
         if (playerChoice === "rock") {
             if (computerChoice === "scissors") {
                 game.textContent = "YOU WIN!";
@@ -57,6 +58,8 @@ const mainGame = () => {
             } else {
                 game.textContent = "YOU LOSE!";
                 return;
+            }
+        }
 
     }
 
