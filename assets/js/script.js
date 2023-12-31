@@ -25,7 +25,7 @@ const mainGame = () => {
         const player = document.querySelector(".player");
         const hands = document.querySelectorAll(".hands img");
 
-        hands.forEach(hand => {
+        hands.forEach((hand) => {
             hand.addEventListener("animationend", function () {
                 this.style.animation = "";
             });
@@ -34,7 +34,7 @@ const mainGame = () => {
         //Computer Options
         const computerOptions = ["rock", "paper", "scissors"];
 
-        options.forEach(option => {
+        options.forEach((option) => {
             option.addEventListener("click", function () {
                 //Computer Choice
                 const computerNumber = Math.floor(Math.random() * 3);
@@ -47,7 +47,6 @@ const mainGame = () => {
                     player.src = `assets/images/${this.textContent}.png`;
                     computer.src = `assets/images/${computerChoice}.png`;
                 }, 2000);
-               
                 //Animation
                 player.style.animation = "shakePlayer 2s ease";
                 computer.style.animation = "shakeComputer 2s ease";
