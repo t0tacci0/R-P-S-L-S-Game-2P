@@ -197,7 +197,7 @@ p {
 .paper,
 .scissors,
 .lizard,
-.spoke {
+.spock {
     visibility: hidden;
     transition: 2s ease-in 2s;
     font-size: 20px;
