@@ -21,6 +21,8 @@ const mainGame = () => {
             rock.style.visibility = "visible";
             paper.style.visibility = "visible";
             scissors.style.visibility = "visible";
+            lizard.style.visibility = "visible";
+            spock.style.visibility = "visible";
         });
     }
 
