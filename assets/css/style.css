@@ -195,7 +195,9 @@ p {
 
 .rock,
 .paper,
-.scissors {
+.scissors,
+.lizard,
+.spoke {
     visibility: hidden;
     transition: 2s ease-in 2s;
     font-size: 20px;
