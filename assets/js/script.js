@@ -40,7 +40,7 @@ const mainGame = () => {
         });
 
         //Computer Options
-        const computerOptions = ["rock", "paper", "scissors"];
+        const computerOptions = ["rock", "paper", "scissors", "lizard", "spock"];
 
         options.forEach((option) => {
             option.addEventListener("click", function () {
