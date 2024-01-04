@@ -281,7 +281,7 @@ p {
     padding: 2rem;
 }
 
-#credits {
+.credits {
     font-size: xx-large;
 }
 
@@ -294,12 +294,26 @@ p {
         padding: 0;
     }
 
+    .player,
+    .computer {
+        width: 10rem;
+    }
+
     .result{
         font-size: 20px;
         padding-top: 0;
     }
 
     #title-animation {
-        display: none;
+        display: contents;
+    }
+
+    .options {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .credits {
+        font-size: normal;
     }
 }

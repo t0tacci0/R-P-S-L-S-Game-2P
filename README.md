@@ -8,7 +8,7 @@ invented by Sam Kass with Karen Bryla, as "Rock Paper Scissors Spock Lizard".
 
 ![Am I Responsive]()
 
-[Rock,Paper,Scissors,Lizard and Spock Game here](https://t0tacci0.github.io/R-P-S-L-S-Game-2P/)
+[Rock,Paper,Scissors,Lizard and Spock Game live site](https://t0tacci0.github.io/R-P-S-L-S-Game-2P/)
 
 ---
 
