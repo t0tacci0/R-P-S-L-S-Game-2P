@@ -1,4 +1,5 @@
 /* Google fonts import */
+
 @import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Rubik+Doodle+Shadow&display=swap');
 
 /* Wildcard selector for default styles from browser */
@@ -7,6 +8,7 @@
 }
 
 /* General style */
+
 body {
     background-color: #C8E1FA;
     color: #071220;
@@ -14,6 +16,7 @@ body {
 }
 
 /* Header */
+
 #header {
     display: flex;
     justify-content: space-evenly;
@@ -140,6 +143,7 @@ body {
     }
 }
 /* Score section */
+
 .score {
     text-align: center;
     margin-top: 10rem;
@@ -267,6 +271,7 @@ p {
 }
 
 /* Footer */
+
 #footer {
     display: flex;
     justify-content: space-around;
@@ -278,4 +283,23 @@ p {
 
 #credits {
     font-size: xx-large;
+}
+
+/* Media query for mobile devices */
+
+@media screen and (max-width: 720px) {
+
+    #header {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .result{
+        font-size: 20px;
+        padding-top: 0;
+    }
+
+    #title-animation {
+        display: none;
+    }
 }
