@@ -1,6 +1,9 @@
 const audio = new Audio();
 audio.src = "assets/music/music_game.wav";
 
+document.getElementById("how-to-play").addEventListener("click", function () {
+    alert("Scissors cuts Paper\nPaper covers Rock\nRock crushes Lizard\nLizard poisons Spock\nSpock smashes Scissors\nScissors decapitates Lizard\nLizard eats Paper\nPaper disproves Spock\nSpock vaporizes Rock\nRock crushes Scissors");
+});
 
 const mainGame = () => {
     let plScore = 0;
