@@ -127,7 +127,6 @@ const mainGame = () => {
 
     };
 
-
     //Calling functions
     startGame();
     playGame();
