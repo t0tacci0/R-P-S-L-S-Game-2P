@@ -8,6 +8,7 @@ document.getElementById("how-to-play").addEventListener("click", function () {
 const mainGame = () => {
     let plScore = 0;
     let cpScore = 0;
+    const resetButton = document.getElementById("reset-button");
 
     //Start the Game
     function startGame() {
@@ -18,7 +19,10 @@ const mainGame = () => {
         const scissors = document.querySelector(".scissors");
         const lizard = document.querySelector(".lizard");
         const spock = document.querySelector(".spock");
-        const reset = document.querySelector("#reset-button");
+
+        document.addEventListener("DOMContentLoaded", function () {
+            document.getElementById("reset-button").style.visibility = "hidden";
+        });
 
         startBtn.addEventListener("click", () => {
             startScreen.style.visibility = "hidden";
@@ -27,7 +31,6 @@ const mainGame = () => {
             scissors.style.visibility = "visible";
             lizard.style.visibility = "visible";
             spock.style.visibility = "visible";
-            reset.style.visibility = "hidden";
         });
     }
 
@@ -72,7 +75,16 @@ const mainGame = () => {
         const computerScore = document.querySelector(".computerScore p");
         playerScore.textContent = plScore;
         computerScore.textContent = cpScore;
+        resetScore();
     };
+    const resetScore = () => {
+        if(plScore === 10 || cpScore === 10){
+            resetButton.style.visibility = "visible";
+            resetButton.addEventListener("click", resetGame);
+        }
+            
+    };
+
 
     const compareHands = (playerChoice, computerChoice) => {
         //Update Text
@@ -129,8 +141,8 @@ const mainGame = () => {
     };
 
     const resetGame = () => {
-        plScore = 0
-        cpScore = 0
+        plScore = 0;
+        cpScore = 0;
         document.querySelector(".result").textContent = "";
         document.querySelector(".playerScore p").textContent = "0";
         document.querySelector(".computerScore p").textContent = "0";
@@ -142,12 +154,6 @@ const mainGame = () => {
     //Calling functions
     startGame();
     playGame();
-
-    const resetButton = document.getElementById("reset-button");
-    if (resetButton) {
-        resetButton.style.visibility = "hidden"
-        resetButton.addEventListener("click", resetGame);
-    }
 };
 
 //Start the main function
