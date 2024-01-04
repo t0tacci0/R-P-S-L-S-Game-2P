@@ -94,48 +94,22 @@ const mainGame = () => {
             result.textContent = "TIE!";
             upScore();
             return;
-        }
-        //Rock Option
-        if (playerChoice === "rock") {
-            if (computerChoice === "scissors") {
+        } else if (
+                (playerChoice === "rock" && (computerChoice === "scissors" || computerChoice === "lizard")) ||
+                (playerChoice === "paper" && (computerChoice === "rock" || computerChoice === "spock")) ||
+                (playerChoice === "scissors" && (computerChoice === "paper" || computerChoice === "lizard")) ||
+                (playerChoice === "lizard" && (computerChoice === "spock" || computerChoice === "paper")) ||
+                (playerChoice === "spock" && (computerChoice === "rock" || computerChoice === "scissors"))
+            ) {
                 result.textContent = "YOU WIN!";
                 plScore++;
                 upScore();
                 return;
-            } else {
-                result.textContent = "YOU LOSE!";
-                cpScore++;
-                upScore();
-                return;
-            }
-        }
-        //Paper Option
-        if (playerChoice === "paper") {
-            if (computerChoice === "scissors") {
-                result.textContent = "YOU LOSE!";
-                cpScore++;
-                upScore();
-                return;
-            } else {
-                result.textContent = "YOU WIN!";
-                plScore++;
-                upScore();
-                return;
-            }
-        }
-        //Scissors Option
-        if (playerChoice === "scissors") {
-            if (computerChoice === "rock") {
-                result.textContent = "YOU LOSE!";
-                cpScore++;
-                upScore();
-                return;
-            } else {
-                result.textContent = " YOU WIN!";
-                plScore++;
-                upScore();
-                return;
-            }
+        } else {
+            result.textContent = "YOU LOSE!";
+            cpScore++;
+            upScore();
+            return;
         }
 
     };
