@@ -93,7 +93,6 @@ const mainGame = () => {
         if (playerChoice === computerChoice) {
             result.textContent = "TIE!";
             upScore();
-            return;
         } else if (
                 (playerChoice === "rock" && (computerChoice === "scissors" || computerChoice === "lizard")) ||
                 (playerChoice === "paper" && (computerChoice === "rock" || computerChoice === "spock")) ||
@@ -104,12 +103,10 @@ const mainGame = () => {
                 result.textContent = "YOU WIN!";
                 plScore++;
                 upScore();
-                return;
         } else {
             result.textContent = "YOU LOSE!";
             cpScore++;
             upScore();
-            return;
         }
 
     };
