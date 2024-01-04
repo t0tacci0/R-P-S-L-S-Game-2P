@@ -18,6 +18,7 @@ const mainGame = () => {
         const scissors = document.querySelector(".scissors");
         const lizard = document.querySelector(".lizard");
         const spock = document.querySelector(".spock");
+        const reset = document.querySelector("#reset-button");
 
         startBtn.addEventListener("click", () => {
             startScreen.style.visibility = "hidden";
@@ -26,6 +27,7 @@ const mainGame = () => {
             scissors.style.visibility = "visible";
             lizard.style.visibility = "visible";
             spock.style.visibility = "visible";
+            reset.style.visibility = "hidden";
         });
     }
 
@@ -71,7 +73,6 @@ const mainGame = () => {
         playerScore.textContent = plScore;
         computerScore.textContent = cpScore;
     };
-
 
     const compareHands = (playerChoice, computerChoice) => {
         //Update Text
@@ -127,9 +128,26 @@ const mainGame = () => {
 
     };
 
+    const resetGame = () => {
+        plScore = 0
+        cpScore = 0
+        document.querySelector(".result").textContent = "";
+        document.querySelector(".playerScore p").textContent = "0";
+        document.querySelector(".computerScore p").textContent = "0";
+        document.querySelector(".player").src = "assets/images/rock.png";
+        document.querySelector(".computer").src = "assets/images/rock.png";
+        resetButton.style.visibility = "hidden";
+    };
+
     //Calling functions
     startGame();
     playGame();
+
+    const resetButton = document.getElementById("reset-button");
+    if (resetButton) {
+        resetButton.style.visibility = "hidden"
+        resetButton.addEventListener("click", resetGame);
+    }
 };
 
 //Start the main function
