@@ -301,12 +301,9 @@ p {
         flex-wrap: wrap;
     }
 
-    #title-animation {
-        display: contents;
-    }
-
     .button {
         font-size: large;
+        margin-top: 2rem;
     }
 
     .player,
