@@ -298,6 +298,7 @@ p {
 
     #header {
         padding: 5px;
+        flex-wrap: wrap;
     }
 
     #title-animation {
@@ -310,7 +311,7 @@ p {
 
     .player,
     .computer {
-        width: 10rem;
+        width: 6rem;
     }
 
     .score {
