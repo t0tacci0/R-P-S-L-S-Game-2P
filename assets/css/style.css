@@ -297,12 +297,15 @@ p {
 @media screen and (max-width: 720px) {
 
     #header {
-        flex-direction: column;
-        padding: 0;
+        padding: 5px;
     }
 
     #title-animation {
         display: contents;
+    }
+
+    .button {
+        font-size: large;
     }
 
     .player,
