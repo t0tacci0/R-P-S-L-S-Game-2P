@@ -1,16 +1,23 @@
+// This code is connected to onclick events for play and pause music
+
 const audio = new Audio();
 audio.src = "assets/music/music_game.wav";
+
+// This code will show an alert with instructions game
 
 document.getElementById("how-to-play").addEventListener("click", function () {
     alert("Scissors cuts Paper\nPaper covers Rock\nRock crushes Lizard\nLizard poisons Spock\nSpock smashes Scissors\nScissors decapitates Lizard\nLizard eats Paper\nPaper disproves Spock\nSpock vaporizes Rock\nRock crushes Scissors");
 });
+
+// Main Game function with scores and resetButton variables
 
 const mainGame = () => {
     let plScore = 0;
     let cpScore = 0;
     const resetButton = document.getElementById("reset-button");
 
-    //Start the Game
+    // Start the Game function
+
     function startGame() {
         const startBtn = document.querySelector(".start button");
         const startScreen = document.querySelector(".start");
@@ -24,6 +31,8 @@ const mainGame = () => {
             document.getElementById("reset-button").style.visibility = "hidden";
         });
 
+        // EventListener to hide start button and to show game buttons
+
         startBtn.addEventListener("click", () => {
             startScreen.style.visibility = "hidden";
             rock.style.visibility = "visible";
@@ -34,12 +43,15 @@ const mainGame = () => {
         });
     }
 
-    //Play the Game
+    // Play the Game function
+
     const playGame = () => {
         const options = document.querySelectorAll(".options button");
         const computer = document.querySelector(".computer");
         const player = document.querySelector(".player");
         const hands = document.querySelectorAll(".hands img");
+
+        // End animation cycle after choice
 
         hands.forEach((hand) => {
             hand.addEventListener("animationend", function () {
@@ -47,28 +59,39 @@ const mainGame = () => {
             });
         });
 
-        //Computer Options
+        // Computer Options Game
+
         const computerOptions = ["rock", "paper", "scissors", "lizard", "spock"];
 
         options.forEach((option) => {
             option.addEventListener("click", function () {
+
                 //Computer Choice
+
                 const computerNumber = Math.floor(Math.random() * 5);
                 const computerChoice = computerOptions[computerNumber];
 
                 setTimeout(() => {
-                    //Game Text Result
+
+                    // Game Text Result
+
                     compareHands(this.textContent, computerChoice);
-                    //Image Result
+
+                    // Image Result choice
+
                     player.src = `assets/images/${this.textContent}.png`;
                     computer.src = `assets/images/${computerChoice}.png`;
                 }, 2000);
-                //Animation
+
+                // Animation hands
+
                 player.style.animation = "shakePlayer 2s ease";
                 computer.style.animation = "shakeComputer 2s ease";
             });
         });
     };
+
+    // This code will update the score
 
     const upScore = () => {
         const playerScore = document.querySelector(".playerScore p");
@@ -77,6 +100,12 @@ const mainGame = () => {
         computerScore.textContent = cpScore;
         resetScore();
     };
+
+    /** This code will reset the score if player or computer choice
+     * will be equal 10 with an EventListener showing 
+     * the resetButton with resetGame function
+     */
+
     const resetScore = () => {
         if(plScore === 10 || cpScore === 10){
             resetButton.style.visibility = "visible";
@@ -85,14 +114,22 @@ const mainGame = () => {
             
     };
 
+    // Following code is showing all possible combination choices
 
     const compareHands = (playerChoice, computerChoice) => {
-        //Update Text
+
+        // Update Text
+
         const result = document.querySelector(".result");
-        //Tie Option
+
+        // Tie Result
+
         if (playerChoice === computerChoice) {
             result.textContent = "TIE!";
             upScore();
+
+        // Player Win result  
+
         } else if (
                 (playerChoice === "rock" && (computerChoice === "scissors" || computerChoice === "lizard")) ||
                 (playerChoice === "paper" && (computerChoice === "rock" || computerChoice === "spock")) ||
@@ -103,6 +140,9 @@ const mainGame = () => {
                 result.textContent = "YOU WIN!";
                 plScore++;
                 upScore();
+
+        // Computer Win result   
+
         } else {
             result.textContent = "YOU LOSE!";
             cpScore++;
@@ -111,6 +151,8 @@ const mainGame = () => {
 
     };
 
+    // This function will reset the Game 
+    
     const resetGame = () => {
         plScore = 0;
         cpScore = 0;
@@ -122,10 +164,12 @@ const mainGame = () => {
         resetButton.style.visibility = "hidden";
     };
 
-    //Calling functions
+    //Calling functions start and play game
+
     startGame();
     playGame();
 };
 
 //Start the main function
+
 mainGame();

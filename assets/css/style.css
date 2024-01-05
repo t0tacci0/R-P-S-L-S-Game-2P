@@ -15,7 +15,7 @@ body {
     font-family: 'Rubik doodle shadow', sans-serif;
 }
 
-/* Header */
+/* Header style */
 
 #header {
     display: flex;
@@ -40,6 +40,8 @@ body {
     padding: 1rem;
 }
 
+/* Title Game animation style */
+
 #title-animation {
     display: inline-block;
     animation: movement 7s linear infinite;
@@ -62,6 +64,7 @@ body {
 }
 
 /* Main style */
+
 .game {
     display: flex;
     align-items: center;
@@ -90,6 +93,8 @@ body {
     margin-right: 5rem;
     transform: rotateY(180deg);
 }
+
+/* Hands animation style */
 
 .shakeComputer {
     animation: shakeComputer 0.8s linear;
@@ -142,7 +147,7 @@ body {
         transform: rotate(0deg);
     }
 }
-/* Score section */
+/* Score section style */
 
 .score {
     text-align: center;
@@ -164,6 +169,8 @@ body {
 p {
     font-size: 45px;
 }
+
+/* Buttons Main game style */
 
 .options {
     display: flex;
@@ -270,7 +277,7 @@ p {
     font-weight: bold;
 }
 
-/* Footer */
+/* Footer style */
 
 #footer {
     display: flex;
@@ -285,7 +292,7 @@ p {
     font-size: xx-large;
 }
 
-/* Media query for mobile devices */
+/* Media query for mobile devices max 720px */
 
 @media screen and (max-width: 720px) {
 
