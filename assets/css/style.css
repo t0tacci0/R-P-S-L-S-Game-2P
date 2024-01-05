@@ -301,9 +301,17 @@ p {
         padding: 0;
     }
 
+    #title-animation {
+        display: contents;
+    }
+
     .player,
     .computer {
         width: 10rem;
+    }
+
+    .score {
+        font-size: small;
     }
 
     .result{
@@ -311,16 +319,18 @@ p {
         padding-top: 0;
     }
 
-    #title-animation {
-        display: contents;
-    }
-
     .options {
         flex-wrap: wrap;
         justify-content: center;
     }
 
+    #footer {
+        justify-content: space-between;
+    }
+
     .credits {
-        font-size: normal;
+        font-size: small;
+        justify-content: space-between;
+        padding-left: inherit;
     }
 }
