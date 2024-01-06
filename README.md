@@ -46,4 +46,7 @@ invented by Sam Kass with Karen Bryla, as "Rock Paper Scissors Spock Lizard".
 
 ### [Acknowledgements](#acknowledgements-1)
 
+-My mentor Mitko Bachvarov provided again great helpful feedback and important suggestions.
+-Slack community for encouragement and information.
+
 ---
