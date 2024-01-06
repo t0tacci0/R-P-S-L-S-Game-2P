@@ -6,7 +6,7 @@ weapons: the lizard (formed by the hand as a sock-puppet-like mouth) and Spock (
 Star Trek Vulcan salute). This reduces the chances of a round ending in a tie. The game was
 invented by Sam Kass with Karen Bryla, as "Rock Paper Scissors Spock Lizard".
 
-![Am I Responsive]()
+![Am I Responsive](assets/images/readme_screenshots/am_i_responsive.png)
 
 [Rock,Paper,Scissors,Lizard and Spock Game live site](https://t0tacci0.github.io/R-P-S-L-S-Game-2P/)
 
@@ -47,6 +47,7 @@ invented by Sam Kass with Karen Bryla, as "Rock Paper Scissors Spock Lizard".
 ### [Acknowledgements](#acknowledgements-1)
 
 -My mentor Mitko Bachvarov provided again great helpful feedback and important suggestions.
+
 -Slack community for encouragement and information.
 
 ---
