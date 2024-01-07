@@ -44,9 +44,31 @@ invented by Sam Kass with Karen Bryla, as "Rock Paper Scissors Spock Lizard".
 
 ### [Credits](#credits-1)
 
+### Code
+
+- Understanding the concept of Animation Text using HTML and CSS[w3schools - CSS Animation](https://www.w3schools.com/css/css3_animations.asp)
+- The README template was helpfully provided by [Code Institute (template)](https://github.com/Code-Institute-Solutions/SampleREADME)
+
+### Content
+
+- All content was written by the developer.
+- All hands images were downloaded from google search images.
+- [Color contrast checker](https://coolors.co/contrast-checker/112a46-acc8e5) Used to check colour for background and elements of the project.
+
+### Media
+
+- [Favicon generator](https://favicon.io/favicon-converter/) Generate favicon from images.
+- [Google Fonts](https://fonts.google.com/) Downloads text fonts.
+- [Remove.bg](https://www.remove.bg/) Remove background images.
+- [Freesound](https://freesound.org/) Downloads free sounds.
+- [Fontawesome](https://fontawesome.com/) Create fonts.
+- [Am I Responsive](https://ui.dev/amiresponsive) Check website responsive.
+
+---
+
 ### [Acknowledgements](#acknowledgements-1)
 
--My mentor Mitko Bachvarov provided again great helpful feedback and important suggestions.
--Slack community for encouragement and information.
+- My mentor Mitko Bachvarov provided again great helpful feedback and important suggestions during all steps for my project.
+- Slack community for encouragement and information.
 
 ---
