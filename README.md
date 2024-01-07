@@ -69,6 +69,45 @@ invented by Sam Kass with Karen Bryla, as "Rock Paper Scissors Spock Lizard".
 
 ---
 
+## Testing
+
+The W3C Markup Validator , W3C CSS Validator and JSHint validator services were used to validate every page of the project to ensure there were no errors.
+
+- [W3C Markup Validtor](https://validator.w3.org/)
+- [W3C CSS Validator](https://jigsaw.w3.org/css-validator/)
+- [JSHint Validator](https://jshint.com/)
+
+### Validation results
+
+<details>
+<summary>index.html
+</summary>
+
+![Home Page validation result](assets/images/readme_screenshots/index_validation.png)
+</details>
+
+<details>
+<summary>style.css
+</summary>
+
+![CSS validation result](assets/images/readme_screenshots/style_validation.png)
+</details>
+
+<details>
+<summary>script.js
+</summary>
+
+![Javascript validation result](assets/images/readme_screenshots/script_validation.png)
+</details>
+
+### Manual Testing
+
+- The website was tested on Google Chrome, Microsoft Edge, and Safari.
+- The website was viewed on a desktop computer, laptop, Samsung Galaxy Fold, iPad mini, iPhone 12 pro.
+- Dev Tools was used to test how the site looks on various screen sizes.
+
+---
+
 ### [Deployment and local development](#deployment-and-local-development-1)
 
 ### [GitHub Pages](#github-pages)
