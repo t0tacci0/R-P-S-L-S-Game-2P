@@ -39,6 +39,39 @@ invented by Sam Kass with Karen Bryla, as "Rock Paper Scissors Spock Lizard".
 ### [Deployment and local development](#deployment-and-local-development-1)
 
 [GitHub Pages](#github-pages)
+- [Forking the GitHub Repository](#forking-the-github-repository)
+- [Local Clone](#local-clone)
+
+### [Credits](#credits-1)
+
+### [Acknowledgements](#acknowledgements-1)
+
+---
+
+## Technologies Used
+
+- [HTML5](https://en.wikipedia.org/wiki/HTML5)
+- [CSS3](https://en.wikipedia.org/wiki/CSS)
+- [JAVASCRIPT](https://en.wikipedia.org/wiki/JavaScript)
+
+---
+
+## Frameworks, Libraries & Programs Used
+
+- [Codeanywhere](https://codeanywhere.com/platform)
+  - Program used for coding
+- [Github](https://github.com/)
+  - Deployment of the website and storing the files online.
+- [Google Fonts](https://fonts.google.com/)
+  - Import main font the website.
+- [Am I Responsive](https://ui.dev/amiresponsive)
+  - Mockup picture for the README file.
+
+---
+
+### [Deployment and local development](#deployment-and-local-development-1)
+
+- [GitHub Pages](#github-pages)
 
 GitHub Pages used to deploy live version of the website.
 
@@ -67,6 +100,7 @@ By forking the repository, we make a copy of the original repository on our GitH
 6. Type `git clone` and then paste The URL copied in the step 3.
 7. Press Enter and your local clone will be created.
 
+---
 
 ### [Credits](#credits-1)
 
