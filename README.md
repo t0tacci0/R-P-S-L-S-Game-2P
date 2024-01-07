@@ -71,7 +71,7 @@ invented by Sam Kass with Karen Bryla, as "Rock Paper Scissors Spock Lizard".
 
 ### [Deployment and local development](#deployment-and-local-development-1)
 
-- [GitHub Pages](#github-pages)
+### [GitHub Pages](#github-pages)
 
 GitHub Pages used to deploy live version of the website.
 
@@ -82,7 +82,7 @@ GitHub Pages used to deploy live version of the website.
 5. The page will automatically refresh.
 6. Scroll back to locate the now-published site [link](https://t0tacci0.github.io/R-P-S-L-S-Game-2P/) in the "GitHub Pages" section.
 
-- [Forking the GitHub Repository](#forking-the-github-repository)
+### [Forking the GitHub Repository](#forking-the-github-repository)
 
 By forking the repository, we make a copy of the original repository on our GitHub account to view and change without affecting the original repository by using these steps:
 
@@ -90,7 +90,7 @@ By forking the repository, we make a copy of the original repository on our GitH
 2. At the top of the Repository(under the main navigation) locate "Fork" button.
 3. Now you should have a copy of the original repository in your GitHub account.
 
-- [Local Clone](#local-clone)
+### [Local Clone](#local-clone)
 
 1. Log in to GitHub and locate [GitHub Repository R-P-S-L-S-Game-2P](https://github.com/t0tacci0/R-P-S-L-S-Game-2P)
 2. Under the repository name click "Clone or download"

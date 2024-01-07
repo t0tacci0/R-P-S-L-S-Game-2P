@@ -42,18 +42,18 @@ body {
 
 /* Title Game animation style */
 
-#title-animation {
+.title-animation {
     display: inline-block;
     animation: movement 7s linear infinite;
     font-weight: bolder;
     font-size: 1.5rem;
 }
 
-#title-animation:nth-child(1) {
+.title-animation:nth-child(1) {
     animation-delay: 1s;
 }
 
-#title-animation:nth-child(2) {
+.title-animation:nth-child(2) {
     animation-delay: 0.5s;
 }
 
