@@ -36,6 +36,8 @@ invented by Sam Kass with Karen Bryla, as "Rock Paper Scissors Spock Lizard".
 - [Manual Testing](#manual-testing)
 - [Lighthouse Report](#lighthouse-report)
 
+### [Unfixed Bugs]()
+
 ### [Deployment and local development](#deployment-and-local-development-1)
 
 [GitHub Pages](#github-pages)

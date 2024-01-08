@@ -220,7 +220,6 @@ p {
 }
 
 #reset-button {
-    visibility: hidden;
     transition: 2s ease-in 2s;
     font-size: 20px;
     background: none;
@@ -260,21 +259,6 @@ p {
 .reset {
     display: flex;
     justify-content: space-around;
-}
-
-.reset-button {
-    background: none;
-    font-family: 'Rubik doodle shadow', sans-serif;
-    color: black;
-    border-radius: 10rem;
-    width: 160px;
-    cursor: pointer;
-    padding: 2rem 2rem;
-    border: 2px solid black;
-    outline: none;
-    transition: 0.3s all linear;
-    font-size: x-large;
-    font-weight: bold;
 }
 
 /* Footer style */

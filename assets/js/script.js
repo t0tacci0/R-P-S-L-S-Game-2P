@@ -27,10 +27,6 @@ const mainGame = () => {
         const lizard = document.querySelector(".lizard");
         const spock = document.querySelector(".spock");
 
-        document.addEventListener("DOMContentLoaded", function () {
-            document.getElementById("reset-button").style.visibility = "hidden";
-        });
-
         // EventListener to hide start button and to show game buttons
 
         startBtn.addEventListener("click", () => {
@@ -107,7 +103,7 @@ const mainGame = () => {
      */
 
     const resetScore = () => {
-        if(plScore === 10 || cpScore === 10){
+        if(plScore === 1 || cpScore === 1){
             resetButton.style.visibility = "visible";
             resetButton.addEventListener("click", resetGame);
         }
