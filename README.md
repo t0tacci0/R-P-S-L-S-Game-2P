@@ -48,6 +48,24 @@ invented by Sam Kass with Karen Bryla, as "Rock Paper Scissors Spock Lizard".
 
 ---
 
+## Features Left to Implement
+
+* Choose to continue or reset after the score will be 10.
+* Insert a timer.
+* Insert a difficulty option.
+
+## Design
+
+ * Colour Scheme
+    * Primary colors used on the website: ![Color Scheme]()
+
+ * Typography
+    * Rubik doodle shadow font is main font used throughout the site with sans-serif as its fallback font in case Kanit doesn't import for some reason.
+
+ * Wireframes
+    * Balsamiq wireframe used for both desktop and mobile screen: ![Balsamiq wireframe]()
+---
+
 ## Technologies Used
 
 - [HTML5](https://en.wikipedia.org/wiki/HTML5)
@@ -145,7 +163,7 @@ By forking the repository, we make a copy of the original repository on our GitH
 
 ### Code
 
-- Understanding the concept of Animation Text using HTML and CSS[w3schools - CSS Animation](https://www.w3schools.com/css/css3_animations.asp)
+- Understanding the concept of Animation Text using HTML and CSS [w3schools - CSS Animation](https://www.w3schools.com/css/css3_animations.asp)
 - The README template was helpfully provided by [Code Institute (template)](https://github.com/Code-Institute-Solutions/SampleREADME)
 
 ### Content
