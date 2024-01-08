@@ -133,7 +133,7 @@ The W3C Markup Validator , W3C CSS Validator and JSHint validator services were 
 <summary>Mobile screen
 </summary>
 
-![Home Page lighthouse report]()
+![Home Page lighthouse report](assets/images/readme_screenshots/mobile_lighthouse.png)
 </details>
 
 #### Desktop analysis
@@ -142,7 +142,7 @@ The W3C Markup Validator , W3C CSS Validator and JSHint validator services were 
 <summary>Desktop screen
 </summary>
 
-![Home Page lighthouse report]()
+![Home Page lighthouse report](assets/images/readme_screenshots/desktop_lighthouse.png)
 </details>
 
 ---
