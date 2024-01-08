@@ -125,6 +125,26 @@ The W3C Markup Validator , W3C CSS Validator and JSHint validator services were 
 - The website was viewed on a desktop computer, laptop, Samsung Galaxy Fold, iPad mini, iPhone 12 pro.
 - Dev Tools was used to test how the site looks on various screen sizes.
 
+### Lighthouse Report
+
+#### Mobile analysis
+
+<details>
+<summary>Mobile screen
+</summary>
+
+![Home Page lighthouse report]()
+</details>
+
+#### Desktop analysis
+
+<details>
+<summary>Desktop screen
+</summary>
+
+![Home Page lighthouse report]()
+</details>
+
 ---
 
 ### [Deployment and local development](#deployment-and-local-development-1)
