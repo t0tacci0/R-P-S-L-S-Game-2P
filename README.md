@@ -57,13 +57,14 @@ invented by Sam Kass with Karen Bryla, as "Rock Paper Scissors Spock Lizard".
 ## Design
 
  * Colour Scheme
-    * Primary colors used on the website: ![Color Scheme]()
+  - Primary colors used on the website: ![Color Scheme](assets/images/readme_screenshots/color_screenshot.png)
 
  * Typography
     * Rubik doodle shadow font is main font used throughout the site with sans-serif as its fallback font in case Kanit doesn't import for some reason.
 
  * Wireframes
-    * Balsamiq wireframe used for both desktop and mobile screen: ![Balsamiq wireframe]()
+  - Balsamiq wireframe used for both desktop and mobile screen: ![Balsamiq wireframe](assets/images/readme_screenshots/wireframe_screenshot.png)
+
 ---
 
 ## Technologies Used
