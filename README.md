@@ -69,6 +69,21 @@ There is a header with all main buttons: homepage,music and instructions for pla
 
 ---
 
+## Features
+
+- This website is targeting people who want to play user-friendly game.
+- Revisited Rock,Paper and scissors game.
+- Responsive on all device sizes.
+
+### Existing Features
+
+- Header section
+  - Includes title animation name, home page, play button music, pause button music, rules instructions.
+  - It is identical in design across desktop and mobile version.
+
+![Header section]()
+
+
 ## Features Left to Implement
 
 * Insert a timer.
