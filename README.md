@@ -184,6 +184,8 @@ By forking the repository, we make a copy of the original repository on our GitH
 
 ### Code
 
+- Understanding the concept of Image Shaking using CSS [w3schools - CSS Shake an Image](https://www.w3schools.com/howto/howto_css_shake_image.asp)
+- Understanding the concept of Image 3D Transform using CSS [w3schools - CSS 3D Transform](https://www.w3schools.com/css/css3_3dtransforms.asp)
 - Understanding the concept of Animation Text using HTML and CSS [w3schools - CSS Animation](https://www.w3schools.com/css/css3_animations.asp)
 - The README template was helpfully provided by [Code Institute (template)](https://github.com/Code-Institute-Solutions/SampleREADME)
 
