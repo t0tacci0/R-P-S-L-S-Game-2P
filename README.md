@@ -36,7 +36,7 @@ invented by Sam Kass with Karen Bryla, as "Rock Paper Scissors Spock Lizard".
 - [Manual Testing](#manual-testing)
 - [Lighthouse Report](#lighthouse-report)
 
-### [Unfixed Bugs]()
+### [Unfixed Bugs](#unfixed-bugs-1)
 
 ### [Deployment and local development](#deployment-and-local-development-1)
 
@@ -48,13 +48,33 @@ invented by Sam Kass with Karen Bryla, as "Rock Paper Scissors Spock Lizard".
 
 ### [Acknowledgements](#acknowledgements-1)
 
+## User Experience (UX)
+
+The site is aimed at people who want to play a user-friendly and easy Rock,Paper and scissors revisited game.
+There is a header with all main buttons: homepage,music and instructions for playing.
+
+### User Stories
+
+- First-time visitor goals
+  - Trying the revisited 'Rock Paper Scissors' game created with basic JavaScript knowledge.
+  - Seeing an example of a JavaScript game.
+  - Easily navigate throughout the header choosing various buttons.
+  - Find the Play button and start to play.
+- Returning visitor goals
+  - The design of the game is appealing let users to play more.
+  - Trying to beat computer logic.
+
+- Frequent user goals
+  - Check if there are any update of the game or more features added.
+
 ---
 
 ## Features Left to Implement
 
-* Choose to continue or reset after the score will be 10.
 * Insert a timer.
 * Insert a difficulty option.
+* Improve animation of the hands.
+* Better design to make it more appealing and playful.
 
 ## Design
 
