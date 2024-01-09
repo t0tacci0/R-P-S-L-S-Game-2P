@@ -70,6 +70,7 @@ body {
     word-spacing: 20px;
     letter-spacing: 2px;
     text-align: center;
+    font-weight: bolder;
   }
 
   /* The Close Button */
@@ -344,6 +345,7 @@ p {
     .modal-text {
         font-size: smaller;
         word-spacing: normal;
+        font-weight: bolder;
     }
 
     /* Main section */
