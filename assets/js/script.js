@@ -77,7 +77,6 @@ const mainGame = () => {
 
         // All buttons disabled when a button is clicked
 
-        const time = document.querySelectorAll(".time");
         options.forEach((option) => {
             option.addEventListener("click", function (){
                 options.forEach((btn) => {
