@@ -81,7 +81,7 @@ There is a header with all main buttons: homepage,music and instructions for pla
   - Includes title animation name, home page, play button music, pause button music, rules instructions.
   - It is identical in design across desktop and mobile version.
 
-![Header section]()
+![Header section](assets/images/readme_screenshots/header_screenshot.png)
 
 
 - Main section
@@ -90,13 +90,14 @@ There is a header with all main buttons: homepage,music and instructions for pla
   - The design is easy-friendly to make people not to be confused.
   - It is identical in design across desktop and mobile version as well.
  
-![Main section]()
+![Main section](assets/images/readme_screenshots/start_game_screenshot.png)
+![Main section](assets/images/readme_screenshots/buttons_screenshot.png)
 
 
 - Footer section
   - In the footer section there is the name of the creator of the project with the correspondig year of creation.
  
-![Footer section]()
+![Footer section](assets/images/readme_screenshots/footer_screenshot.png)
 
 
 
