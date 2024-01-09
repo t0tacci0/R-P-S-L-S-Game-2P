@@ -84,6 +84,24 @@ There is a header with all main buttons: homepage,music and instructions for pla
 ![Header section]()
 
 
+- Main section
+  - Includes all the entire game with a start button to start the game and a reset button to reset at anytime.
+  - The chooses hands buttons will show after starting the game and the main play button will hide automatically.
+  - The design is easy-friendly to make people not to be confused.
+  - It is identical in design across desktop and mobile version as well.
+ 
+![Main section]()
+
+
+- Footer section
+  - In the footer section there is the name of the creator of the project with the correspondig year of creation.
+ 
+![Footer section]()
+
+
+
+---
+
 ## Features Left to Implement
 
 * Insert a timer.
