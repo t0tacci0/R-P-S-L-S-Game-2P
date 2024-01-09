@@ -69,7 +69,7 @@ There is a header with all main buttons: homepage,music and instructions for pla
 
 ---
 
-## Features
+### Features
 
 - This website is targeting people who want to play user-friendly game.
 - Revisited Rock,Paper and scissors game.
@@ -202,6 +202,12 @@ The W3C Markup Validator , W3C CSS Validator and JSHint validator services were 
 </details>
 
 ---
+
+### [Unfixed Bugs](#unfixed-bugs-1)
+
+Since until now no bugs were found i can't say that some is being fixed.
+Checking if any bugs can modify the project is under progress.
+
 
 ### [Deployment and local development](#deployment-and-local-development-1)
 
