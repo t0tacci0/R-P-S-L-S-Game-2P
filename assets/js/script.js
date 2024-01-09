@@ -3,11 +3,31 @@
 const audio = new Audio();
 audio.src = "assets/music/music_game.wav";
 
-// This code will show an alert with instructions game
+// Get the modal
+var modal = document.getElementById("modal");
 
-document.getElementById("how-to-play").addEventListener("click", function () {
-    alert("Scissors cuts Paper\nPaper covers Rock\nRock crushes Lizard\nLizard poisons Spock\nSpock smashes Scissors\nScissors decapitates Lizard\nLizard eats Paper\nPaper disproves Spock\nSpock vaporizes Rock\nRock crushes Scissors");
-});
+// Get the button that opens the modal
+var modalBtn = document.getElementById("how-to-play");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on the button, open the modal
+modalBtn.onclick = function() {
+  modal.style.display = "block";
+};
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+};
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+};
 
 // Main Game function with scores and resetButton variables
 
