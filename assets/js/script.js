@@ -75,6 +75,22 @@ const mainGame = () => {
             });
         });
 
+        // All buttons disabled when a button is clicked
+
+        const time = document.querySelectorAll(".time");
+        options.forEach((option) => {
+            option.addEventListener("click", function (){
+                options.forEach((btn) => {
+                    btn.disabled = true;
+                });
+                setTimeout(() => {
+                    options.forEach((btn) => {
+                      btn.disabled = false;
+                    });
+                },2000 );     
+            });
+        });
+
         // Computer Options Game
 
         const computerOptions = ["rock", "paper", "scissors", "lizard", "spock"];
