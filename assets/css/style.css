@@ -343,7 +343,7 @@ p {
     }
 
     .modal-text {
-        font-size: smaller;
+        font-size: larger;
         word-spacing: normal;
         font-weight: bolder;
     }
