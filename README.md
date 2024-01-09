@@ -69,7 +69,7 @@ There is a header with all main buttons: homepage,music and instructions for pla
 
 ---
 
-### Features
+## Features
 
 - This website is targeting people who want to play user-friendly game.
 - Revisited Rock,Paper and scissors game.
@@ -203,15 +203,14 @@ The W3C Markup Validator , W3C CSS Validator and JSHint validator services were 
 
 ---
 
-### [Unfixed Bugs](#unfixed-bugs-1)
-
+### [Unfixed Bugs]
 Since until now no bugs were found i can't say that some is being fixed.
 Checking if any bugs can modify the project is under progress.
 
 
-### [Deployment and local development](#deployment-and-local-development-1)
+### [Deployment and local development]
 
-### [GitHub Pages](#github-pages)
+### [GitHub Pages]
 
 GitHub Pages used to deploy live version of the website.
 
@@ -222,7 +221,7 @@ GitHub Pages used to deploy live version of the website.
 5. The page will automatically refresh.
 6. Scroll back to locate the now-published site [link](https://t0tacci0.github.io/R-P-S-L-S-Game-2P/) in the "GitHub Pages" section.
 
-### [Forking the GitHub Repository](#forking-the-github-repository)
+### [Forking the GitHub Repository]
 
 By forking the repository, we make a copy of the original repository on our GitHub account to view and change without affecting the original repository by using these steps:
 
@@ -230,7 +229,7 @@ By forking the repository, we make a copy of the original repository on our GitH
 2. At the top of the Repository(under the main navigation) locate "Fork" button.
 3. Now you should have a copy of the original repository in your GitHub account.
 
-### [Local Clone](#local-clone)
+### [Local Clone]
 
 1. Log in to GitHub and locate [GitHub Repository R-P-S-L-S-Game-2P](https://github.com/t0tacci0/R-P-S-L-S-Game-2P)
 2. Under the repository name click "Clone or download"
@@ -242,7 +241,7 @@ By forking the repository, we make a copy of the original repository on our GitH
 
 ---
 
-### [Credits](#credits-1)
+### [Credits]
 
 ### Code
 
@@ -268,7 +267,7 @@ By forking the repository, we make a copy of the original repository on our GitH
 
 ---
 
-### [Acknowledgements](#acknowledgements-1)
+### [Acknowledgements]
 
 - My mentor Mitko Bachvarov provided again great helpful feedback and important suggestions during all steps for my project.
 - Slack community for encouragement and information.
