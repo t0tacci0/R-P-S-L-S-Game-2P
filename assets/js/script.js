@@ -29,6 +29,12 @@ window.onclick = function(event) {
   }
 };
 
+// Define the resetGame function
+function resetGame() {
+    // Reset game logic goes here
+    alert("Game is reset!");
+}
+
 // Main Game function with scores and resetButton variables
 
 const mainGame = () => {
@@ -133,7 +139,7 @@ const mainGame = () => {
     };
 
     /** This code will reset the score if player or computer choice
-     * will be equal 10 with an EventListener showing 
+     * will be equal 1 or more with an EventListener showing 
      * the resetButton with resetGame function
      */
 
