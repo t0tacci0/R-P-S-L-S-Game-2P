@@ -1,5 +1,4 @@
 // This code is connected to onclick events for play and pause music
-
 const audio = new Audio();
 audio.src = "assets/music/music_game.wav";
 
@@ -13,37 +12,33 @@ var modalBtn = document.getElementById("how-to-play");
 var span = document.getElementsByClassName("close")[0];
 
 // When the user clicks on the button, open the modal
-modalBtn.onclick = function() {
-  modal.style.display = "block";
+modalBtn.onclick = function () {
+    modal.style.display = "block";
 };
 
 // When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-  modal.style.display = "none";
+span.onclick = function () {
+    modal.style.display = "none";
 };
 
 // When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
+window.onclick = function (event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
 };
 
-// Define the resetGame function
+// Define the resetGame function to call
 function resetGame() {
-    // Reset game logic goes here
-    alert("Game is reset!");
 }
 
 // Main Game function with scores and resetButton variables
-
 const mainGame = () => {
     let plScore = 0;
     let cpScore = 0;
     const resetButton = document.getElementById("reset-button");
 
     // Start the Game function
-
     function startGame() {
         const startBtn = document.querySelector(".start button");
         const startScreen = document.querySelector(".start");
@@ -54,7 +49,6 @@ const mainGame = () => {
         const spock = document.querySelector(".spock");
 
         // EventListener to hide start button and to show game buttons
-
         startBtn.addEventListener("click", () => {
             startScreen.style.visibility = "hidden";
             rock.style.visibility = "visible";
@@ -66,7 +60,6 @@ const mainGame = () => {
     }
 
     // Play the Game function
-
     const playGame = () => {
         const options = document.querySelectorAll(".options button");
         const computer = document.querySelector(".computer");
@@ -74,7 +67,6 @@ const mainGame = () => {
         const hands = document.querySelectorAll(".hands img");
 
         // End animation cycle after choice
-
         hands.forEach((hand) => {
             hand.addEventListener("animationend", function () {
                 this.style.animation = "";
@@ -82,46 +74,40 @@ const mainGame = () => {
         });
 
         // All buttons disabled when a button is clicked
-
         options.forEach((option) => {
-            option.addEventListener("click", function (){
+            option.addEventListener("click", function () {
                 options.forEach((btn) => {
                     btn.disabled = true;
                 });
                 setTimeout(() => {
                     options.forEach((btn) => {
-                      btn.disabled = false;
+                        btn.disabled = false;
                     });
-                },2000 );     
+                }, 2000);
             });
         });
 
         // Computer Options Game
-
         const computerOptions = ["rock", "paper", "scissors", "lizard", "spock"];
 
         options.forEach((option) => {
             option.addEventListener("click", function () {
 
                 //Computer Choice
-
                 const computerNumber = Math.floor(Math.random() * 5);
                 const computerChoice = computerOptions[computerNumber];
 
                 setTimeout(() => {
 
                     // Game Text Result
-
                     compareHands(this.textContent, computerChoice);
 
                     // Image Result choice
-
                     player.src = `assets/images/${this.textContent}.png`;
                     computer.src = `assets/images/${computerChoice}.png`;
                 }, 2000);
 
                 // Animation hands
-
                 player.style.animation = "shakePlayer 2s ease";
                 computer.style.animation = "shakeComputer 2s ease";
             });
@@ -129,7 +115,6 @@ const mainGame = () => {
     };
 
     // This code will update the score
-
     const upScore = () => {
         const playerScore = document.querySelector(".playerScore p");
         const computerScore = document.querySelector(".computerScore p");
@@ -142,17 +127,15 @@ const mainGame = () => {
      * will be equal 1 or more with an EventListener showing 
      * the resetButton with resetGame function
      */
-
     const resetScore = () => {
-        if(plScore === 1 || cpScore === 1){
+        if (plScore === 1 || cpScore === 1) {
             resetButton.style.visibility = "visible";
-            resetButton.addEventListener("click", resetGame);
+            resetButton.addEventListener("click", reset);
         }
-            
+
     };
 
     // Following code is showing all possible combination choices
-
     const compareHands = (playerChoice, computerChoice) => {
 
         // Update Text
@@ -160,26 +143,23 @@ const mainGame = () => {
         const result = document.querySelector(".result");
 
         // Tie Result
-
         if (playerChoice === computerChoice) {
             result.textContent = "TIE!";
             upScore();
 
-        // Player Win result  
-
+            // Player Win result  
         } else if (
-                (playerChoice === "rock" && (computerChoice === "scissors" || computerChoice === "lizard")) ||
-                (playerChoice === "paper" && (computerChoice === "rock" || computerChoice === "spock")) ||
-                (playerChoice === "scissors" && (computerChoice === "paper" || computerChoice === "lizard")) ||
-                (playerChoice === "lizard" && (computerChoice === "spock" || computerChoice === "paper")) ||
-                (playerChoice === "spock" && (computerChoice === "rock" || computerChoice === "scissors"))
-            ) {
-                result.textContent = "YOU WIN!";
-                plScore++;
-                upScore();
+            (playerChoice === "rock" && (computerChoice === "scissors" || computerChoice === "lizard")) ||
+            (playerChoice === "paper" && (computerChoice === "rock" || computerChoice === "spock")) ||
+            (playerChoice === "scissors" && (computerChoice === "paper" || computerChoice === "lizard")) ||
+            (playerChoice === "lizard" && (computerChoice === "spock" || computerChoice === "paper")) ||
+            (playerChoice === "spock" && (computerChoice === "rock" || computerChoice === "scissors"))
+        ) {
+            result.textContent = "YOU WIN!";
+            plScore++;
+            upScore();
 
-        // Computer Win result   
-
+            // Computer Win result   
         } else {
             result.textContent = "YOU LOSE!";
             cpScore++;
@@ -189,8 +169,7 @@ const mainGame = () => {
     };
 
     // This function will reset the Game 
-    
-    const resetGame = () => {
+    const reset = () => {
         plScore = 0;
         cpScore = 0;
         document.querySelector(".result").textContent = "";
@@ -199,14 +178,14 @@ const mainGame = () => {
         document.querySelector(".player").src = "assets/images/rock.png";
         document.querySelector(".computer").src = "assets/images/rock.png";
         resetButton.style.visibility = "hidden";
+        alert("Game is reset");
     };
 
     //Calling functions start and play game
-
     startGame();
     playGame();
+    resetGame();
 };
 
 //Start the main function
-
 mainGame();
