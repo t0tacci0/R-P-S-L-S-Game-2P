@@ -28,10 +28,6 @@ window.onclick = function (event) {
     }
 };
 
-// Define the resetGame function to call
-function resetGame() {
-}
-
 // Main Game function with scores and resetButton variables
 const mainGame = () => {
     let plScore = 0;
@@ -184,7 +180,6 @@ const mainGame = () => {
     //Calling functions start and play game
     startGame();
     playGame();
-    resetGame();
 };
 
 //Start the main function
